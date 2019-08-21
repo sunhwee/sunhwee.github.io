@@ -32,13 +32,13 @@
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="PicGo" scheme="https://sunhwee.github.io/tags/PicGo/"/>
-    
       <category term="Github" scheme="https://sunhwee.github.io/tags/Github/"/>
     
-      <category term="图床" scheme="https://sunhwee.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
       <category term="Tutorial" scheme="https://sunhwee.github.io/tags/Tutorial/"/>
+    
+      <category term="PicGo" scheme="https://sunhwee.github.io/tags/PicGo/"/>
+    
+      <category term="图床" scheme="https://sunhwee.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
@@ -121,7 +121,7 @@
     <link href="https://sunhwee.github.io/2019/08/12/softwares-bug-tips/"/>
     <id>https://sunhwee.github.io/2019/08/12/softwares-bug-tips/</id>
     <published>2019-08-12T08:42:05.000Z</published>
-    <updated>2019-08-21T11:25:15.740Z</updated>
+    <updated>2019-08-21T11:47:29.332Z</updated>
     
     <summary type="html">
     
@@ -132,11 +132,11 @@
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="常用软件" scheme="https://sunhwee.github.io/tags/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    
       <category term="Softwares" scheme="https://sunhwee.github.io/tags/Softwares/"/>
     
       <category term="Bugs" scheme="https://sunhwee.github.io/tags/Bugs/"/>
+    
+      <category term="常用软件" scheme="https://sunhwee.github.io/tags/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
       <category term="Tips" scheme="https://sunhwee.github.io/tags/Tips/"/>
     
@@ -158,13 +158,13 @@
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Github" scheme="https://sunhwee.github.io/tags/Github/"/>
-    
-      <category term="Tutorial" scheme="https://sunhwee.github.io/tags/Tutorial/"/>
-    
       <category term="Hexo" scheme="https://sunhwee.github.io/tags/Hexo/"/>
     
+      <category term="Github" scheme="https://sunhwee.github.io/tags/Github/"/>
+    
       <category term="博客" scheme="https://sunhwee.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Tutorial" scheme="https://sunhwee.github.io/tags/Tutorial/"/>
     
   </entry>
   
@@ -199,7 +199,7 @@
     <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura/"/>
     <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura/</id>
     <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T11:10:41.040Z</updated>
+    <updated>2019-08-21T11:47:49.303Z</updated>
     
     <summary type="html">
     
