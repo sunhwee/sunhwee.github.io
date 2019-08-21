@@ -26,7 +26,7 @@ function bot_ui_ini() {
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "这里是 Mashiro"
+            content: "这里是 洪卫"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
@@ -65,33 +65,33 @@ function bot_ui_ini() {
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: "目前就读于上海财经大学"
+                content: "目前就读于电子科技大学"
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
-                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
+                    content: "喜欢文史却误入工科，但后来喜欢上了cv…"
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "因为数据分析也需要Coder嘛"
+                        content: "因为搞CV肯定需要Coder嘛"
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
+                            content: "主攻 C++ 语言和 Python，略懂点 java，偶尔也折腾 HTML/CSS/JavaScript/"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
+                                content: "研究的方向，是计算机视觉（computer vision）以及深度学习（deep learning）"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师"
+                                    content: "喜欢写字，希望有一天能够被称为书法家"
                                 }).then(function () {
                                     botui.action.button({
                                         delay: 1100,
                                         action: [{
-                                            text: "为什么叫Mashiro呢？ 🤔",
-                                            value: "why-mashiro"
+                                            text: "为什么叫 洪卫 呢？ 🤔",
+                                            value: "why-hongwei"
                                         }]
                                     }).then(function (a) {
                                         thirdpart()
@@ -106,7 +106,7 @@ function bot_ui_ini() {
         thirdpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "Mashiro以及站名都来自一部动画，因为和主角有一样的爱好~ 如果有兴趣可以找找首页上的视频~"
+                content: "洪卫是我的名字，所以方便识记，就把博客取名 洪卫的博客~"
             }).then(function () {
                 botui.action.button({
                     delay: 1500,
@@ -143,7 +143,7 @@ function bot_ui_ini() {
         fifthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "emmmm，看备案信息你就知道了=.= 本来想要zheng.xin的，但50万真买不起。。"
+                content: "emmmm，=.= 其实就是我的姓名拼音缩写，本来想要sunhw的，但是已经被注册了，就在后面加了两个ee。。"
             }).then(function () {
                 botui.message.add({
                     delay: 1600,

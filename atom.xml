@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sunhwee.github.io/"/>
-  <updated>2019-08-21T08:24:31.574Z</updated>
+  <updated>2019-08-21T10:58:56.717Z</updated>
   <id>https://sunhwee.github.io/</id>
   
   <author>
@@ -17,354 +17,180 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(10)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (10)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:31.574Z</updated>
+    <title>PicGo+GitHub：你的最佳免费图床选择！</title>
+    <link href="https://sunhwee.github.io/2019/08/18/PicGo-GitHub-PicBed/"/>
+    <id>https://sunhwee.github.io/2019/08/18/PicGo-GitHub-PicBed/</id>
+    <published>2019-08-18T12:54:45.000Z</published>
+    <updated>2019-08-21T10:58:56.717Z</updated>
     
     <summary type="html">
     
-      hexo-sakura主题使用教程
+      这是一款图片上传的工具，目前支持SM.MS图床，微博图床，七牛图床，腾讯云COS，阿里云OSS，Imgur，又拍云，`GitHub`等图床，未来将支持更多图床。
     
     </summary>
     
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
+      <category term="Github" scheme="https://sunhwee.github.io/tags/Github/"/>
     
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="Tutorial" scheme="https://sunhwee.github.io/tags/Tutorial/"/>
+    
+      <category term="PicGo" scheme="https://sunhwee.github.io/tags/PicGo/"/>
+    
+      <category term="图床" scheme="https://sunhwee.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
   <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(11)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (11)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:35.226Z</updated>
+    <title>Markdown Emoji表情语法速查表</title>
+    <link href="https://sunhwee.github.io/2019/08/16/emoji-cheat-sheet/"/>
+    <id>https://sunhwee.github.io/2019/08/16/emoji-cheat-sheet/</id>
+    <published>2019-08-16T10:50:36.000Z</published>
+    <updated>2019-08-21T10:53:36.401Z</updated>
     
     <summary type="html">
     
-      hexo-sakura主题使用教程
+      这是一篇关于markdown中快速插入Emoji表情的语法速查表，以后写markdown想要插入emoji表情忘记语法了，可以快速查看，挺方便的。
     
     </summary>
     
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
+      <category term="Markdown" scheme="https://sunhwee.github.io/tags/Markdown/"/>
     
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="Emoji" scheme="https://sunhwee.github.io/tags/Emoji/"/>
+    
+      <category term="表情包" scheme="https://sunhwee.github.io/tags/%E8%A1%A8%E6%83%85%E5%8C%85/"/>
     
   </entry>
   
   <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(12)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (12)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:38.934Z</updated>
+    <title>Python GUI之tkinter窗口视窗教程大集合（看这篇就够了）</title>
+    <link href="https://sunhwee.github.io/2019/08/16/Python-GUI-TKinter-Tutorial/"/>
+    <id>https://sunhwee.github.io/2019/08/16/Python-GUI-TKinter-Tutorial/</id>
+    <published>2019-08-16T07:36:09.000Z</published>
+    <updated>2019-08-21T10:58:56.733Z</updated>
     
     <summary type="html">
     
-      hexo-sakura主题使用教程
+      这篇文章是去年8月份学习python时顺便在博客园写的一篇笔记，现在搬运到hexo博客上来，主要针对新手。由于本篇文章较长，所以下面给出内容目录方便跳转阅读，当然也可以用博客页面最右侧的文章目录导航栏进行跳转查阅。
     
     </summary>
     
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
+      <category term="Tutorial" scheme="https://sunhwee.github.io/tags/Tutorial/"/>
     
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="Python" scheme="https://sunhwee.github.io/tags/Python/"/>
+    
+      <category term="GUI" scheme="https://sunhwee.github.io/tags/GUI/"/>
+    
+      <category term="TKinter" scheme="https://sunhwee.github.io/tags/TKinter/"/>
     
   </entry>
   
   <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(13)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (13)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:41.794Z</updated>
+    <title>各类软件常用命令</title>
+    <link href="https://sunhwee.github.io/2019/08/15/software-commands/"/>
+    <id>https://sunhwee.github.io/2019/08/15/software-commands/</id>
+    <published>2019-08-15T06:25:59.000Z</published>
+    <updated>2019-08-21T11:00:29.699Z</updated>
     
     <summary type="html">
     
-      hexo-sakura主题使用教程
+      这篇博客笔记用来记录各类软件常用命令和使用技巧，持续更新...
     
     </summary>
     
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
+      <category term="Software" scheme="https://sunhwee.github.io/tags/Software/"/>
     
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="Commands" scheme="https://sunhwee.github.io/tags/Commands/"/>
+    
+      <category term="常用命令" scheme="https://sunhwee.github.io/tags/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
   <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(14)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (14)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:45.410Z</updated>
+    <title>常用软件bug调试与使用tips</title>
+    <link href="https://sunhwee.github.io/2019/08/12/softwares-bug-tips/"/>
+    <id>https://sunhwee.github.io/2019/08/12/softwares-bug-tips/</id>
+    <published>2019-08-12T08:42:05.000Z</published>
+    <updated>2019-08-21T11:02:13.028Z</updated>
     
     <summary type="html">
     
-      hexo-sakura主题使用教程
+      这是一篇介绍常用软件遇到bug的一些解决办法和一些软件使用技巧。
     
     </summary>
     
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
+      <category term="Softwares" scheme="https://sunhwee.github.io/tags/Softwares/"/>
     
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="Bugs" scheme="https://sunhwee.github.io/tags/Bugs/"/>
+    
+      <category term="常用软件" scheme="https://sunhwee.github.io/tags/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Tips" scheme="https://sunhwee.github.io/tags/Tips/"/>
     
   </entry>
   
   <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(15)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (15)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:48.442Z</updated>
+    <title>Hexo+Github博客搭建记录</title>
+    <link href="https://sunhwee.github.io/2019/08/10/Hexo-Blog-Tutorial/"/>
+    <id>https://sunhwee.github.io/2019/08/10/Hexo-Blog-Tutorial/</id>
+    <published>2019-08-10T13:44:44.000Z</published>
+    <updated>2019-08-21T10:55:48.986Z</updated>
     
     <summary type="html">
     
-      hexo-sakura主题使用教程
+      阅读须知:注意，这篇文章篇幅较长，主要针对新手，每一步很详细，所以可能会显得比较啰嗦，所以建议基础比较好小伙伴根据目录选择自己感兴趣的部分跳着看，不要文章没看，上来先喷一下！谢谢( ⊙ o ⊙ )
     
     </summary>
     
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
+      <category term="Hexo" scheme="https://sunhwee.github.io/tags/Hexo/"/>
     
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="Github" scheme="https://sunhwee.github.io/tags/Github/"/>
+    
+      <category term="博客" scheme="https://sunhwee.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Tutorial" scheme="https://sunhwee.github.io/tags/Tutorial/"/>
     
   </entry>
   
   <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(16)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (16)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:54.334Z</updated>
+    <title>常用软件推荐</title>
+    <link href="https://sunhwee.github.io/2019/08/06/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>https://sunhwee.github.io/2019/08/06/常用软件推荐/</id>
+    <published>2019-08-06T14:35:36.000Z</published>
+    <updated>2019-08-21T11:03:43.402Z</updated>
     
     <summary type="html">
     
-      hexo-sakura主题使用教程
+      这是一篇软件推荐的博文，主要各个平台常用的一些软件。
     
     </summary>
     
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
+      <category term="Software" scheme="https://sunhwee.github.io/tags/Software/"/>
     
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="常用软件" scheme="https://sunhwee.github.io/tags/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(2)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (2)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:04.890Z</updated>
+      <category term="Windows" scheme="https://sunhwee.github.io/tags/Windows/"/>
     
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
-    
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(3)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (3)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:08.262Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
-    
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(4)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (4)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:11.518Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
-    
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(5)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (5)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:14.774Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
-    
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(6)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (6)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:18.182Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
-    
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(7)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (7)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:21.686Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
-    
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(8)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (8)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:24.938Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
-    
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC%20(9)/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本 (9)/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:27.974Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
-    
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura - 副本/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:24:57.461Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="https://sunhwee.github.io/tags/web/"/>
-    
-      <category term="悦读" scheme="https://sunhwee.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="Linux" scheme="https://sunhwee.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -373,7 +199,7 @@
     <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura/"/>
     <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura/</id>
     <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T08:25:01.385Z</updated>
+    <updated>2019-08-21T10:42:40.429Z</updated>
     
     <summary type="html">
     

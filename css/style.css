@@ -5792,7 +5792,7 @@ button.botui-actions-buttons-button {
     text-decoration-line:none
 }
 .logolink .sakurasono {
-    background-color:rgba(255,255,255,.5);
+    // background-color:rgba(255,255,255,.5);
     border-radius:5px;
     color:#464646;
     height:auto;
