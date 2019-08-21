@@ -111,8 +111,8 @@ function bot_ui_ini() {
                 botui.action.button({
                     delay: 1500,
                     action: [{
-                        text: "为什么是白猫呢？ 🤔",
-                        value: "why-cat"
+                        text: "为什么是建这个博客呢？ 🤔",
+                        value: "why-blog"
                     }]
                 }).then(function (a) {
                     fourthpart()
@@ -122,11 +122,11 @@ function bot_ui_ini() {
         fourthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "因为对GitHub有种执念… "
+                content: "因为喜欢分享和记录… "
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
-                    content: "而且我真的是猫控！"
+                    content: "而且我方便以后回忆！"
                 }).then(function () {
                     botui.action.button({
                         delay: 1500,
