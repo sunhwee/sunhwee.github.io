@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
   <title itemprop="name">Hexo+Github博客搭建记录 | 洪卫的博客</title>
   
-    <link rel="shortcut icon" href="/images/favicon.png">
+  <link rel="shortcut icon" href="/images/favicon.png">
   
   <meta http-equiv="x-dns-prefetch-control" content="on">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
@@ -18,49 +19,128 @@
   <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
   <link rel="stylesheet" href="/css/zoom.css" media="all">
   <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+  <!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
 " type="text/css" media="all"> -->
   <script>
-  /*Initial Variables*/
-  var mashiro_option = new Object();
-  var mashiro_global = new Object();
-  mashiro_option.NProgressON = true;
-  /* 
-   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
-   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
-   */
-  mashiro_option.email_domain = "";
-  mashiro_option.email_name = "";
-  mashiro_option.cookie_version_control = "";
-  mashiro_option.qzone_autocomplete = false;
-  mashiro_option.site_name = "洪卫の博客博客";
-  mashiro_option.author_name = "博客";
-  mashiro_option.site_url = "https://sunhwee.github.io";
-  mashiro_option.v_appId = "4qrgMLdQtFhNdC2oE1lz8nkj-gzGzoHsz";
-  mashiro_option.v_appKey = "xu6AIz3rqFUlR9fVxRXeKbvY";
-  mashiro_option.mathjax = "0";
-  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
-  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+    /*Initial Variables*/
+    var mashiro_option = new Object();
+    var mashiro_global = new Object();
+    mashiro_option.NProgressON = true;
+    /* 
+     * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+     * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+     */
+    mashiro_option.email_domain = "";
+    mashiro_option.email_name = "";
+    mashiro_option.cookie_version_control = "";
+    mashiro_option.qzone_autocomplete = false;
+    mashiro_option.site_name = "洪卫の博客博客";
+    mashiro_option.author_name = "博客";
+    mashiro_option.site_url = "https://sunhwee.github.io";
+    mashiro_option.v_appId = "4qrgMLdQtFhNdC2oE1lz8nkj-gzGzoHsz";
+    mashiro_option.v_appKey = "xu6AIz3rqFUlR9fVxRXeKbvY";
+    mashiro_option.mathjax = "0";
+    mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/";
+    mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
 
-  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
-  // mashiro_option.float_player_on = true;
+    // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+    // mashiro_option.float_player_on = true;
 
-  /*End of Initial Variables*/
+    /*End of Initial Variables*/
   </script>
   <script type="text/javascript">
-  var bg = "https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(0).jpg.webp,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(1).jpg.webp,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(2).jpg.webp,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(3).jpg.webp,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(4).jpg.webp,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(5).jpg.webp,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(6).jpg.webp,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(8).jpg.webp,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(9).jpg.webp,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(10).jpg.webp".split(",");
-  var bgindex = Math.floor(Math.random()*bg.length);
-  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
-    alert('朋友，IE浏览器未适配哦~');
-  }
+    var bg = "https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/1.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/2.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/3.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/4.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/5.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/6.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/7.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/8.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/9.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/10.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/11.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/12.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/13.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/14.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/15.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/16.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/17.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/18.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/19.jpg,https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/20.jpg".split(",");
+    var bgindex = Math.floor(Math.random() * bg.length);
+    if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+      alert('朋友，IE浏览器未适配哦~');
+    }
   </script>
   <style type="text/css">
-  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+    .hljs-ln {
+      border-collapse: collapse
+    }
+
+    .hljs-ln td {
+      padding: 0
+    }
+
+    .hljs-ln-n:before {
+      content: attr(data-line-number)
+    }
   </style>
-  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  <style type="text/css">
+    .site-top .lower nav {
+      display: block !important;
+    }
+
+    .author-profile i,
+    .post-like a,
+    .post-share .show-share,
+    .sub-text,
+    .we-info a,
+    span.sitename,
+    .post-more i:hover,
+    #pagination a:hover,
+    .post-content a:hover,
+    .float-content i:hover {
+      color: #FE9600
+    }
+
+    .feature i,
+    .download,
+    .navigator i:hover,
+    .links ul li:before,
+    .ar-time i,
+    span.ar-circle,
+    .object,
+    .comment .comment-reply-link,
+    .siren-checkbox-radio:checked+.siren-checkbox-radioInput:after {
+      background: #FE9600
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #FE9600
+    }
+
+    .download,
+    .navigator i:hover,
+    .link-title,
+    .links ul li:hover,
+    #pagination a:hover,
+    .comment-respond input[type='submit']:hover {
+      border-color: #FE9600
+    }
+
+    .entry-content a:hover,
+    .site-info a:hover,
+    .comment h4 a,
+    #comments-navi a.prev,
+    #comments-navi a.next,
+    .comment h4 a:hover,
+    .site-top ul li a:hover,
+    .entry-title a:hover,
+    #archives-temp h3,
+    span.page-numbers.current,
+    .sorry li a:hover,
+    .site-title a:hover,
+    i.iconfont.js-toggle-search.iconsearch:hover,
+    .comment-respond input[type='submit']:hover {
+      color: #FE9600
+    }
+
+    .comments .comments-main {
+      display: block !important;
+    }
+
+    .comments .comments-hidden {
+      display: none !important;
+    }
+
+    background-position:center center;
+    background-attachment:inherit;
+    }
   </style>
-</head>
-</html>
+</head></html>
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
   <div class="scrollbar" id="bar">
   </div>
@@ -388,19 +468,19 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(3).jpg.webp);" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(3).jpg.webp">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/4.jpg);" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/4.jpg">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
       Hexo+Github博客搭建记录</h1>
       <p class="entry-census">
         <span>
-          <a href="sunhwee.com">
+          <a href="https://sunhwee.com">
             <img src="https://sunhwee.com/favicon.png">
           </a>
         </span>
         <span>
-          <a href="sunhwee.com">洪卫</a>
+          <a href="https://sunhwee.com">洪卫</a>
         </span>
         <span class="bull">
         ·</span>
@@ -455,62 +535,50 @@
 <p>顺便说一下，<code>windows</code>在<code>git</code>安装完后，就可以直接使用<code>git bash</code>来敲命令行了，不用自带的<code>cmd</code>，<code>cmd</code>有点难用。</p>
 </blockquote>
 <p><strong>linux：</strong>对<code>linux</code>来说实在是太简单了，因为最早的<code>git</code>就是在<code>linux</code>上编写的，只需要一行代码</p>
-<pre><code class="bash">sudo apt-get install git
-</code></pre>
+<pre><code class="bash">sudo apt-get install git</code></pre>
 <p>安装完成后在命令提示符中输入<code>git --version</code>来查看一下版本验证是否安装成功。</p>
 <h2 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2. 安装nodejs"></a>2. 安装nodejs</h2><hr>
 <p><code>Hexo</code>是基于<code>node.js</code>编写的，所以需要安装一下<code>node.js</code>和里面的<code>npm</code>工具。</p>
 <p><strong>windows：</strong>下载稳定版或者最新版都可以<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">Node.js</a>，安装选项全部默认，一路点击<code>Next</code>。<br>最后安装好之后，按<code>Win+R</code>打开命令提示符，输入<code>node -v</code>和<code>npm -v</code>，如果出现版本号，那么就安装成功了。</p>
 <p><strong>linux：</strong>命令行安装：</p>
 <pre><code class="bash">sudo apt-get install nodejs
-sudo apt-get install npm
-</code></pre>
-<p>不过不推荐命令行安装，有时候有问题，建议直接到官网去下载编译好的压缩文件，如下所示:<img src="/.io//1.png" alt>，然后解压到你指定的文件夹即可，比如我解压到我系统的<code>/home/shw/MySoftwares</code>目录下了，如图:<img src="/.io//2.png" alt></p>
+sudo apt-get install npm</code></pre>
+<p>不过不推荐命令行安装，有时候有问题，建议直接到官网去下载编译好的压缩文件，如下所示:<img src="/.io//1.png" alt="">)，然后解压到你指定的文件夹即可，比如我解压到我系统的<code>/home/shw/MySoftwares</code>目录下了，如图:<img src="/.io//2.png" alt=""></p>
 <blockquote>
 <p>注意本压缩包是<code>.tar.xz</code>格式的，需要两次解压</p>
 </blockquote>
 <p>配置一下环境变量</p>
-<pre><code class="bash">sudo vim /etc/profile
-</code></pre>
+<pre><code class="bash">sudo vim /etc/profile</code></pre>
 <p>复制下面两行到刚打开的<code>profile</code>文件最底部(注意<code>node</code>的安装地址<code>/home/shw/MySoftwares/node-v12.8.0-linux-x64</code>换成自己的)：</p>
 <pre><code class="bash">export NODE_HOME=/home/shw/MySoftwares/node-v12.8.0-linux-x64
-export PATH=$PATH:$NODE_HOME/bin
-</code></pre>
+export PATH=$PATH:$NODE_HOME/bin</code></pre>
 <p>保存后退出，再执行下面命令将环境变量生效：</p>
-<pre><code class="bash">source /etc/profile
-</code></pre>
+<pre><code class="bash">source /etc/profile</code></pre>
 <p>将目录软链接到全局环境下（命令后面的<code>/usr/local/bin/node</code>是固定的）</p>
 <pre><code class="bash">sudo ln -s /home/shw/MySoftwares/node-v12.8.0-linux-x64/node /usr/local/bin/node
-sudo ln -s /home/shw/MySoftwares/node-v12.8.0-linux-x64/npm /usr/local/bin/npm
-</code></pre>
+sudo ln -s /home/shw/MySoftwares/node-v12.8.0-linux-x64/npm /usr/local/bin/npm</code></pre>
 <p>这样安装好了以后使用<code>npm</code>安装的包(比如：<code>ionic serve</code>)，使用包的命令时可能会提示找不到命令，没关系，在用户目录下终端执行下面命令(固定写法)：</p>
-<pre><code class="bash">echo -e &quot;export PATH=$(npm prefix -g)/bin:$PATH&quot; &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc
-</code></pre>
+<pre><code class="bash">echo -e "export PATH=$(npm prefix -g)/bin:$PATH" &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc</code></pre>
 <p>这样我们在所有用户下，都可以使用<code>npm</code>，也可以使用<code>npm</code>安装的包的命令。成功的将<code>nodejs</code>安装并配置到全局环境下。</p>
 <p>安装完后，打开命令行终端，输入:</p>
 <pre><code class="bash">node -v
-npm -v
-</code></pre>
+npm -v</code></pre>
 <p>检查一下有没有安装成功</p>
 <h2 id="添加国内镜像源"><a href="#添加国内镜像源" class="headerlink" title="添加国内镜像源"></a><strong>添加国内镜像源</strong></h2><p>如果没有梯子的话，可以使用阿里的国内镜像进行加速。</p>
-<pre><code class="bash">npm config set registry https://registry.npm.taobao.org
-</code></pre>
+<pre><code class="bash">npm config set registry https://registry.npm.taobao.org</code></pre>
 <h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3. 安装Hexo"></a>3. 安装Hexo</h2><hr>
 <p>前面<code>git</code>和<code>nodejs</code>安装好后，就可以安装<code>hexo</code>了，你可以先创建一个文件夹<code>MyBlog</code>，用来存放自己的博客文件，然后<code>cd</code>到这个文件夹下（或者在这个文件夹下直接右键<code>git bash</code>打开）。</p>
 <p>比如我的博客文件都存放在<code>D:\Study\MyBlog</code>目录下。</p>
 <p>在该目录下右键点击<code>Git Bash Here</code>，打开<code>git</code>的控制台窗口，以后我们所有的操作都在<code>git</code>控制台进行，就不用<code>Windows</code>自带的<code>cmd</code>了。</p>
 <p>定位到该目录下，输入<code>npm install -g hexo-cli</code>安装<code>Hexo</code>。可能会有几个报错，无视它就行。</p>
-<pre><code class="bash">npm install -g hexo-cli
-</code></pre>
+<pre><code class="bash">npm install -g hexo-cli</code></pre>
 <p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p>
 <p>至此<code>hexo</code>就安装完了。</p>
 <p>接下来初始化一下<code>hexo</code>,即初始化我们的网站，输入<code>hexo init</code>初始化文件夹</p>
-<pre><code class="bash">hexo init MyBlog
-</code></pre>
+<pre><code class="bash">hexo init MyBlog</code></pre>
 <p>这个<code>MyBlog</code>可以自己取什么名字都行，然后，接着输入<code>npm install</code>安装必备的组件。</p>
 <pre><code class="bash">cd MyBlog      //进入这个MyBlog文件夹
-npm install
-</code></pre>
+npm install</code></pre>
 <p>新建完成后，指定文件夹<code>MyBlog</code>目录下有：</p>
 <ul>
 <li><code>node_modules:</code> 依赖包</li>
@@ -522,76 +590,67 @@ npm install
 </ul>
 <p>这样本地的网站配置也弄好啦，输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>打开本地服务器，</p>
 <pre><code class="bash">hexo g
-hexo server(或者简写:hexo s）)
-</code></pre>
-<p>然后浏览器打开<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>，就可以看到我们的博客啦，效果如下：<br><img src="/.io//3.png" alt></p>
+hexo server(或者简写:hexo s）)</code></pre>
+<p>然后浏览器打开<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>，就可以看到我们的博客啦，效果如下：<br><img src="/.io//3.png" alt=""></p>
 <p>按<code>ctrl+c</code>关闭本地服务器。</p>
 <h2 id="4-注册Github账号创建个人仓库"><a href="#4-注册Github账号创建个人仓库" class="headerlink" title="4. 注册Github账号创建个人仓库"></a>4. 注册Github账号创建个人仓库</h2><hr>
 <p>接下来就去注册一个<code>github</code>账号，用来存放我们的网站。大多数小伙伴应该都有了吧，作为一个合格的程序猿（媛）还是要有一个的。</p>
-<p>打开<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>，新建一个项目仓库<code>New repository</code>，如下所示：<br><img src="/.io//4.png" alt><br>然后如下图所示，输入自己的项目名字，后面一定要加<code>.github.io</code>后缀，<code>README</code>初始化也要勾上。<br><img src="/.io//5.png" alt></p>
+<p>打开<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>，新建一个项目仓库<code>New repository</code>，如下所示：<br><img src="/.io//4.png" alt=""><br>然后如下图所示，输入自己的项目名字，后面一定要加<code>.github.io</code>后缀，<code>README</code>初始化也要勾上。<br><img src="/.io//5.png" alt=""></p>
 <blockquote>
 <p>要创建一个和你用户名相同的仓库，后面加.<a href="http://github.io，只有这样，将来要部署到`GitHub" target="_blank" rel="noopener">http://github.io，只有这样，将来要部署到`GitHub</a> page<code>的时候，才会被识别，也就是http://xxxx.github.io，其中xxx就是你注册</code>GitHub`的用户名。例如我的：<a href="http://shw2018.github.io" target="_blank" rel="noopener">http://shw2018.github.io</a></p>
 </blockquote>
 <h2 id="5-生成SSH添加到GitHub"><a href="#5-生成SSH添加到GitHub" class="headerlink" title="5. 生成SSH添加到GitHub"></a>5. 生成SSH添加到GitHub</h2><hr>
 <p>生成<code>SSH</code>添加到<code>GitHub</code>，连接<code>Github</code>与本地。<br>右键打开<code>git bash</code>，然后输入下面命令：</p>
-<pre><code class="bash">git config --global user.name &quot;yourname&quot;
-git config --global user.email &quot;youremail&quot;
-</code></pre>
+<pre><code class="bash">git config --global user.name "yourname"
+git config --global user.email "youremail"</code></pre>
 <p>这里的<code>yourname</code>输入你的<code>GitHub</code>用户名，<code>youremail</code>输入你<code>GitHub</code>的邮箱。这样<code>GitHub</code>才能知道你是不是对应它的账户。例如我的：</p>
-<pre><code class="bash">git config --global user.name &quot;shw2018&quot;
-git config --global user.email &quot;hwsun@std.uestc.edu.cn&quot;
-</code></pre>
+<pre><code class="bash">git config --global user.name "shw2018"
+git config --global user.email "hwsun@std.uestc.edu.cn"</code></pre>
 <p>可以用以下两条，检查一下你有没有输对</p>
 <pre><code class="bash">git config user.name
-git config user.email
-</code></pre>
+git config user.email</code></pre>
 <p>然后创建<code>SSH</code>,一路回车</p>
 <blockquote>
 <p><code>ssh</code>，简单来讲，就是一个秘钥，其中，<code>id_rsa</code>是你这台电脑的私人秘钥，不能给别人看的，<code>id_rsa.pub</code>是公共秘钥，可以随便给别人看。把这个公钥放在<code>GitHub</code>上，这样当你链接<code>GitHub</code>自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过<code>git</code>上传你的文件到<code>GitHub</code>上。</p>
 </blockquote>
-<pre><code class="bash">ssh-keygen -t rsa -C &quot;youremail&quot;
-</code></pre>
+<pre><code class="bash">ssh-keygen -t rsa -C "youremail"</code></pre>
 <p>这个时候它会告诉你已经生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。或者<code>git bash</code>中输入</p>
-<pre><code class="bash">cat ~/.ssh/id_rsa.pub
-</code></pre>
+<pre><code class="bash">cat ~/.ssh/id_rsa.pub</code></pre>
 <p>将输出的内容复制到框中，点击确定保存。</p>
-<p>打开<a href="http://github.com" target="_blank" rel="noopener">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个<code>SSH</code>，名字随便取一个都可以，把你的<code>id_rsa.pub</code>里面的信息复制进去。如图：<img src="/.io//6.png" alt></p>
-<p>在<code>git bash</code>输入<code>ssh -T git@github.com</code>，如果如下图所示，出现你的用户名，那就成功了。<br><img src="/.io//7.png" alt></p>
+<p>打开<a href="http://github.com" target="_blank" rel="noopener">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个<code>SSH</code>，名字随便取一个都可以，把你的<code>id_rsa.pub</code>里面的信息复制进去。如图：<img src="/.io//6.png" alt=""></p>
+<p>在<code>git bash</code>输入<code>ssh -T git@github.com</code>，如果如下图所示，出现你的用户名，那就成功了。<br><img src="/.io//7.png" alt=""></p>
 <h2 id="6-将hexo部署到GitHub"><a href="#6-将hexo部署到GitHub" class="headerlink" title="6. 将hexo部署到GitHub"></a>6. 将hexo部署到GitHub</h2><hr>
 <p>这一步，我们就可以将<code>hexo</code>和<code>GitHub</code>关联起来，也就是将<code>hexo</code>生成的文章部署到<code>GitHub</code>上，打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客配置相关的各种信息。</p>
 <p>修改最后一行的配置：</p>
 <pre><code class="yml">deploy:
   type: git
   repository: https://github.com/shw2018/shw2018.github.io
-  branch: master
-</code></pre>
+  branch: master</code></pre>
 <p><code>repository</code>修改为你自己的<code>github</code>项目地址即可，就是部署时，告诉工具，将生成网页通过<code>git</code>方式上传到你对应的链接仓库中。</p>
 <p>这个时候需要先安装<code>deploy-git</code> ，也就是部署的命令,这样你才能用命令部署到<code>GitHub</code>。</p>
-<pre><code class="bash">npm install hexo-deployer-git --save
-</code></pre>
+<pre><code class="bash">npm install hexo-deployer-git --save</code></pre>
 <p>然后</p>
 <pre><code class="bash">hexo clean
 hexo generate
-hexo deploy
-</code></pre>
+hexo deploy</code></pre>
 <p>其中 <code>hexo clean</code>清除了你之前生成的东西，也可以不加。 <code>hexo generate</code>顾名思义，生成静态文章，可以用 <code>hexo g</code>缩写 ，<code>hexo deploy</code>部署文章，可以用<code>hexo d</code>缩写</p>
 <blockquote>
 <p>注意<code>deploy</code>时可能要你输入<code>username</code>和<code>password</code>。</p>
 </blockquote>
-<p>得到下图就说明部署成功了，过一会儿就可以在<a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 这个网站看到你的博客了！！<br><img src="/.io//8.png" alt></p>
+<p>得到下图就说明部署成功了，过一会儿就可以在<a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 这个网站看到你的博客了！！<br><img src="/.io//8.png" alt=""></p>
 <h2 id="7-设置个人域名"><a href="#7-设置个人域名" class="headerlink" title="7. 设置个人域名"></a>7. 设置个人域名</h2><hr>
 <p>现在你的个人网站的地址是<code>yourname.github.io</code>，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱。</p>
 <blockquote>
 <p><strong>不过，这一步不是必要的，如果目前还不想买域名可以先跳过，继续看后面的，以后想买域名了在还看这块</strong></p>
 </blockquote>
 <p>首先你得购买一个专属域名，<code>xx</code>云都能买，看你个人喜好了。</p>
-<p>这篇以腾讯云为例，腾讯云官网购买：<img src="/.io//9.png" alt><br>然后实名认证后进入腾讯云控制台，点云解析进去，找到你刚买的域名，点进去添加两条解析记录，如下图所示：<br><img src="/.io//10.png" alt></p>
-<p>然后打开你的<code>github</code>博客项目，点击<code>settings</code>，拉到下面<code>Custom domain</code>处，填上你自己的域名，保存：<br><img src="/.io//11.png" alt></p>
+<p>这篇以腾讯云为例，腾讯云官网购买：<img src="/.io//9.png" alt=""><br>然后实名认证后进入腾讯云控制台，点云解析进去，找到你刚买的域名，点进去添加两条解析记录，如下图所示：<br><img src="/.io//10.png" alt=""></p>
+<p>然后打开你的<code>github</code>博客项目，点击<code>settings</code>，拉到下面<code>Custom domain</code>处，填上你自己的域名，保存：<br><img src="/.io//11.png" alt=""></p>
 <p>这时候你的项目根目录应该会出现一个名为<code>CNAME</code>的文件了。如果没有的话，打开你本地博客<code>/source</code>目录，我的是<code>D:\Study\MyBlog\source</code>，新建<code>CNAME</code>文件，注意没有后缀。然后在里面写上你的域名，保存。最后运行<code>hexo g</code>、<code>hexo d</code>上传到<code>github</code>。</p>
 <p>过不了多久，再打开你的浏览器，输入你自己的专属域名，就可以看到搭建的网站啦！</p>
 <h2 id="8-写文章、发布文章"><a href="#8-写文章、发布文章" class="headerlink" title="8. 写文章、发布文章"></a>8. 写文章、发布文章</h2><hr>
 <p>首先在博客根目录下右键打开<code>git bash</code>，安装一个扩展<code>npm i hexo-deployer-git</code>。</p>
-<p>然后输入<code>hexo new post &quot;article title&quot;</code>，新建一篇文章。</p>
+<p>然后输入<code>hexo new post "article title"</code>，新建一篇文章。</p>
 <p>然后打开<code>D:\Study\MyBlog\source\_posts</code>的目录，可以发现下面多了一个文件夹和一个<code>.md</code>文件，一个用来存放你的图片等数据，另一个就是你的文章文件啦。<br>你可以会直接在<code>vscode</code>里面编写<code>markdown</code>文件，可以实时预览，也可以用用其他编辑<code>md</code>文件的软件的工具编写。<br>编写完markdown文件后，根目录下输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>可以本地预览效果，最后输入<code>hexo d</code>上传到<code>github</code>上。这时打开你的<code>github.io</code>主页就能看到发布的文章啦。</p>
 <p>到这儿基本第一部分就完成了，已经完整搭建起一个比较简陋的个人博客了，接下来我们就可以对我们的博客进行个性化定制了。</p>
 <h1 id="第二部分-定制"><a href="#第二部分-定制" class="headerlink" title="第二部分  定制"></a>第二部分  定制</h1><hr>
@@ -609,8 +668,7 @@ hexo deploy
     - categories
     - friends
     - tags
-- themes
-</code></pre>
+- themes</code></pre>
 <p><code>node_modules</code>是<code>node.js</code>各种库的目录，<code>public</code>是生成的网页文件目录，<code>scaffolds</code>里面就三个文件，存储着新文章和新页面的初始设置，<code>source</code>是我们最常用到的一个目录，里面存放着文章、各类页面、图像等文件，<code>themes</code>存放着主题文件，一般也用不到。</p>
 <p>我们平时写文章只需要关注<code>source/_posts</code>这个文件夹就行了。</p>
 <h3 id="1-2-hexo基本配置"><a href="#1-2-hexo基本配置" class="headerlink" title="1.2 hexo基本配置"></a>1.2 hexo基本配置</h3><hr>
@@ -628,14 +686,12 @@ hexo deploy
 <p>参数结果:year/:month/:day/:title/2019/08/10/hello-world :year-:month-:day-:title.html 2019-08-10-hello-world.html :category/:titlefoo/bar/hello-world</p>
 </blockquote>
 <p>再往下翻，中间这些都默认就好了。</p>
-<pre><code class="yml">theme: landscap
-</code></pre>
+<pre><code class="yml">theme: landscap</code></pre>
 <p><code>theme</code>就是选择什么主题，也就是在<code>themes</code>这个文件夹下，在官网上有很多个主题，默认给你安装的是<code>lanscape</code>这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在<code>themes</code>文件夹下，再修改这个主题参数就可以了。</p>
 <h4 id="1-2-3-Front-matter"><a href="#1-2-3-Front-matter" class="headerlink" title="1.2.3 Front-matter"></a>1.2.3 Front-matter</h4><hr>
 <p><code>Front-matter</code> 是<code>md</code>文件最上方以 <code>---</code>分隔的区域，用于指定个别文件的变量，举例来说：</p>
 <pre><code>title: Hexo+Github博客搭建记录
-date: 2019-08-10 21:44:44
-</code></pre><p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
+date: 2019-08-10 21:44:44</code></pre><p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
 <p>参数描述<code>layout</code>布局<code>title</code>标题<code>date</code>建立日期<code>updated</code>更新日期<code>comments</code>开启文章的评论功能<code>tags</code>标签（不适用于分页）<code>categories</code>分类（不适用于分页）<code>permalink</code>覆盖文章网址</p>
 <p>其中，分类和标签需要区别一下，分类具有顺序性和层次性，也就是说<code>Foo</code>，<code>Bar</code>不等于<code>Bar</code>，<code>Foo</code>；而标签没有顺序和层次。</p>
 <pre><code class="yml">---
@@ -656,35 +712,28 @@ tags:
 - 博客
 categories:
 - 软件安装与配置
----
-</code></pre>
+---</code></pre>
 <h4 id="1-2-4-layout（布局）"><a href="#1-2-4-layout（布局）" class="headerlink" title="1.2.4 layout（布局）"></a>1.2.4 layout（布局）</h4><hr>
 <p><strong>1.2.4.1 post</strong></p>
 <p>当你每一次使用代码</p>
-<pre><code class="bash">hexo new XXX
-</code></pre>
+<pre><code class="bash">hexo new XXX</code></pre>
 <p>它其实默认使用的是<code>post</code>这个布局，也就是在<code>source</code>文件夹下的<code>_post</code>里面。</p>
 <p><code>Hexo</code>有三种默认布局：<code>post</code>、<code>page</code>和<code>draft</code>，它们分别对应不同的路径，而您自定义的其他布局和<code>post</code>相同，都将储存到<code>source/_posts</code>文件夹。</p>
 <p>而new这个命令其实是：</p>
-<pre><code class="bash">hexo new [layout] &lt;title&gt;
-</code></pre>
+<pre><code class="bash">hexo new [layout] &lt;title&gt;</code></pre>
 <p>只不过这个<code>layout</code>默认是<code>post</code>罢了。</p>
 <p><strong>1.2.4.2 page</strong></p>
 <p>如果你想另起一页，那么可以使用</p>
-<pre><code class="bash">hexo new page newpage
-</code></pre>
+<pre><code class="bash">hexo new page newpage</code></pre>
 <p>系统会自动给你在<code>source</code>文件夹下创建一个<code>newpage</code>文件夹，以及<code>newpage</code>文件夹中的<code>index.md</code>，这样你访问的<code>newpage</code>对应的链接就是<a href="http://xxx.xxx/newpage" target="_blank" rel="noopener">http://xxx.xxx/newpage</a></p>
 <p><strong>1.2.4.3 draft</strong></p>
 <p><code>draft</code>是草稿的意思，也就是你如果想写文章，又不希望被看到，那么可以</p>
-<pre><code class="bash">hexo new draft newdraft
-</code></pre>
+<pre><code class="bash">hexo new draft newdraft</code></pre>
 <p>这样会在<code>source/_draft</code>中新建一个<code>newdraft.md</code>文件，如果你的草稿文件写的过程中，想要预览一下，那么可以使用</p>
-<pre><code class="bash">hexo server --draft
-</code></pre>
+<pre><code class="bash">hexo server --draft</code></pre>
 <p>在本地端口中开启服务预览。</p>
 <p>如果你的草稿文件写完了，想要发表到<code>post</code>中，</p>
-<pre><code class="bash">hexo publish draft newdraft
-</code></pre>
+<pre><code class="bash">hexo publish draft newdraft</code></pre>
 <p>就会自动把<code>newdraft.md</code>发送到<code>post</code>中。</p>
 <h2 id="2-更换主题"><a href="#2-更换主题" class="headerlink" title="2. 更换主题"></a>2. 更换主题</h2><hr>
 <p>我们在了解<code>Hexo</code>博客文件基础之后，知道主题文件就放在<code>themes</code>文件下，那么我们就可以去Hexo官网下载喜欢的主题，复制进去然后修改参数即可。<br>网上大多数主题都是github排名第一的<code>Next</code>主题，但是我个人不是很喜欢，我在网上看到一个主题感觉还不错：<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a>，地址在<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">传送门</a>。这个主题看着比较漂亮，并且响应式比较友好，点起来很舒服，功能也比较很多。</p>
@@ -693,6 +742,7 @@ categories:
 </blockquote>
 <blockquote>
 <p>特性：</p>
+</blockquote>
 <ul>
 <li>简单漂亮，文章内容美观易读</li>
 <li><a href="https://material.io/" target="_blank" rel="noopener">Material Design</a> 设计</li>
@@ -712,8 +762,7 @@ categories:
 <li>集成了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>、谷歌分析（<code>Google Analytics</code>）和文章字数统计等功能</li>
 <li>支持在首页的音乐播放和视频播放功能</li>
 </ul>
-</blockquote>
-<p>他的介绍文档写得非常的详细，还有中英文两个版本。效果图如下：<br><img src="/.io//12.png" alt></p>
+<p>他的介绍文档写得非常的详细，还有中英文两个版本。效果图如下：<br><img src="/.io//12.png" alt=""></p>
 <p>首先先按照文档教程安装一遍主题，然后是可以正常打开的，如果你是一般使用的话，基本没啥问题了。不过有些地方有些地方可以根据你自己的习惯和喜好修改一下， 下面记录一下我这个博客修改了的一些地方。</p>
 <h3 id="2-1-新建文章模板修改"><a href="#2-1-新建文章模板修改" class="headerlink" title="2.1 新建文章模板修改"></a>2.1 新建文章模板修改</h3><hr>
 <p>首先为了新建文章方便，我们可以修改一下文章模板，建议将<code>/scaffolds/post.md</code>修改为如下代码：</p>
@@ -731,34 +780,32 @@ password:
 summary:
 tags:
 categories:
----
-</code></pre>
+---</code></pre>
 <p>这样新建文章后 一些<code>Front-matter</code>参数不用你自己补充了，修改对应信息就可以了。</p>
 <h3 id="2-2-添加404页面"><a href="#2-2-添加404页面" class="headerlink" title="2.2 添加404页面"></a>2.2 添加404页面</h3><hr>
 <p>原来的主题没有<code>404</code>页面，我们加一个。首先在<code>/source/</code>目录下新建一个<code>404.md</code>，内容如下：</p>
 <pre><code class="json">title: 404
 date: 2019-08-5 16:41:10
-type: &quot;404&quot;
-layout: &quot;404&quot;
-description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
-</code></pre>
+type: "404"
+layout: "404"
+description: "Oops～，我崩溃了！找不到你想要的页面 :("</code></pre>
 <p>然后在<code>/themes/matery/layout/</code>目录下新建一个<code>404.ejs</code>文件，内容如下：</p>
-<pre><code class="html">&lt;style type=&quot;text/css&quot;&gt;
-    /* don&#39;t remove. */
+<pre><code class="html">&lt;style type="text/css"&gt;
+    /* don't remove. */
     .about-cover {
         height: 75vh;
     }
 &lt;/style&gt;
 
-&lt;div class=&quot;bg-cover pd-header about-cover&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
-        &lt;div class=&quot;row&quot;&gt;
-            &lt;div class=&quot;col s10 offset-s1 m8 offset-m2 l8 offset-l2&quot;&gt;
-                &lt;div class=&quot;brand&quot;&gt;
-                    &lt;div class=&quot;title center-align&quot;&gt;
+&lt;div class="bg-cover pd-header about-cover"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2"&gt;
+                &lt;div class="brand"&gt;
+                    &lt;div class="title center-align"&gt;
                         404
                     &lt;/div&gt;
-                    &lt;div class=&quot;description center-align&quot;&gt;
+                    &lt;div class="description center-align"&gt;
                         &lt;%= page.description %&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
@@ -769,46 +816,39 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
 
 &lt;script&gt;
     // 每天切换 banner 图.  Switch banner image every day.
-    $(&#39;.bg-cover&#39;).css(&#39;background-image&#39;, &#39;url(/medias/banner/&#39; + new Date().getDay() + &#39;.jpg)&#39;);
-&lt;/script&gt;
-</code></pre>
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+&lt;/script&gt;</code></pre>
 <h3 id="2-3“关于”页面增加简历（可选）"><a href="#2-3“关于”页面增加简历（可选）" class="headerlink" title="2.3“关于”页面增加简历（可选）"></a>2.3“关于”页面增加简历（可选）</h3><hr>
-<p>修改<code>/themes/matery/layout/about.ejs</code>，找到<code>&lt;div class=&quot;card&quot;&gt;</code>标签，然后找到它对应的<code>&lt;/div&gt;</code>标签，接在后面新增一个<code>card</code>，语句如下：</p>
-<pre><code class="html">&lt;div class=&quot;card&quot;&gt;
-    &lt;div class=&quot;card-content&quot;&gt;
-        &lt;div class=&quot;card-content article-card-content&quot;&gt;
-                &lt;div class=&quot;title center-align&quot; data-aos=&quot;zoom-in-up&quot;&gt;
-                    &lt;i class=&quot;fa fa-address-book&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;%- __(&#39;myCV&#39;) %&gt;
+<p>修改<code>/themes/matery/layout/about.ejs</code>，找到<code>&lt;div class="card"&gt;</code>标签，然后找到它对应的<code>&lt;/div&gt;</code>标签，接在后面新增一个<code>card</code>，语句如下：</p>
+<pre><code class="html">&lt;div class="card"&gt;
+    &lt;div class="card-content"&gt;
+        &lt;div class="card-content article-card-content"&gt;
+                &lt;div class="title center-align" data-aos="zoom-in-up"&gt;
+                    &lt;i class="fa fa-address-book"&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;%- __('myCV') %&gt;
                 &lt;/div&gt;
-                &lt;div id=&quot;articleContent&quot; data-aos=&quot;fade-up&quot;&gt;
+                &lt;div id="articleContent" data-aos="fade-up"&gt;
                     &lt;%- page.content %&gt;
                 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
 <p>这样就会多出一张<code>card</code>，然后可以在<code>/source/about/index.md</code>下面写上你的简历了，当然这里的位置随你自己设置，你也可以把简历作为第一个<code>card</code>。</p>
 <h3 id="2-4-数学公式渲染和代码高亮"><a href="#2-4-数学公式渲染和代码高亮" class="headerlink" title="2.4 数学公式渲染和代码高亮"></a>2.4 数学公式渲染和代码高亮</h3><hr>
 <p><strong>2.4.1 解决mathjax与代码高亮的冲突</strong></p>
 <p>如果你按照教程安装了代码高亮插件<code>hexo-prism-plugin</code>，单独使用是没有问题的，但如果你又使用了<code>mathjax</code>，并且按照网上教程，安装<code>kramed</code>插件并修改了<code>js</code>文件里的正则表达式（为了解决<code>markdown</code>和<code>mathjax</code>的语法冲突），那你的代码就无法高亮了。解决方法很简单，别用<code>kramed</code>插件了，还用原来自带的<code>marked</code>插件，直接改它的正则表达式就行了。</p>
 <p><strong>2.4.2 加数学公式显示</strong></p>
 <p>打开<code>/themes/matery/layout</code>中的<code>post.ejs</code>文件，在最下方粘贴如下代码：</p>
-<pre><code class="javascript">&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&quot;&gt;&lt;/script&gt;
-</code></pre>
+<pre><code class="javascript">&lt;script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"&gt;&lt;/script&gt;</code></pre>
 <p>由于<code>markdown</code>语法与<code>mathjax</code>语法存在冲突，所以还需要修改源文件。</p>
 <p>打开<code>/node_modules/marked/lib</code>中的<code>marked.js</code>文件，第539行的<code>escape:</code>处替换成：</p>
-<pre><code class="js">escape: /^$[`*\[\]()#$+\-.!_&gt;])/
-</code></pre>
+<pre><code class="js">escape: /^$[`*\[\]()#$+\-.!_&gt;])/</code></pre>
 <p>第553行的<code>em:</code>处替换成：</p>
-<pre><code class="js">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/
-</code></pre>
+<pre><code class="js">em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</code></pre>
 <p>这时在文章里写数学公式基本没有问题了，但是要注意：<br><strong>数学公式中如果出现了连续两个{，中间一定要加空格！</strong></p>
 <p>举个例子:<br>行内公式：$y = f(x)$<br>代码：</p>
-<pre><code class="tex">$y = f(x)$
-</code></pre>
+<pre><code class="tex">$y = f(x)$</code></pre>
 <p>行间公式：<br>\[y = {f_{ {g_1}}}(x)\]<br>代码：</p>
-<pre><code class="tex">\\[y = {f_{ {g_1}}}(x)\\]
-</code></pre>
+<pre><code class="tex">\\[y = {f_{ {g_1}}}(x)\\]</code></pre>
 <blockquote>
 <p>注意上面花括号之间有空格！</p>
 </blockquote>
@@ -816,7 +856,7 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
 <p>修改<code>/themes/matery/layout/_partial</code>中的<code>footer.ejs</code>，在最后加上：</p>
 <pre><code class="js">&lt;script language=javascript&gt;
     function siteTime() {
-        window.setTimeout(&quot;siteTime()&quot;, 1000);
+        window.setTimeout("siteTime()", 1000);
         var seconds = 1000;
         var minutes = seconds * 60;
         var hours = minutes * 60;
@@ -845,14 +885,12 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
         var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
         var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
         var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
-        document.getElementById(&quot;sitetime&quot;).innerHTML = &quot;本站已运行 &quot; +diffYears+&quot; 年 &quot;+diffDays + &quot; 天 &quot; + diffHours + &quot; 小时 &quot; + diffMinutes + &quot; 分钟 &quot; + diffSeconds + &quot; 秒&quot;;
+        document.getElementById("sitetime").innerHTML = "本站已运行 " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
     }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
     siteTime();
-&lt;/script&gt;
-</code></pre>
+&lt;/script&gt;</code></pre>
 <p>然后在合适的地方（比如<code>copyright</code>声明后面）加上下面的代码就行了：</p>
-<pre><code class="html">&lt;span id=&quot;sitetime&quot;&gt;&lt;/span&gt;
-</code></pre>
+<pre><code class="html">&lt;span id="sitetime"&gt;&lt;/span&gt;</code></pre>
 <h3 id="2-6-修改不蒜子初始化计数"><a href="#2-6-修改不蒜子初始化计数" class="headerlink" title="2.6 修改不蒜子初始化计数"></a>2.6 修改不蒜子初始化计数</h3><hr>
 <p>因为不蒜子至今未开放注册，所以没办法在官网修改初始化，只能自己动手了。和上一条一样，我们在<code>/themes/matery/layout/_partial</code>里的<code>footer.ejs</code>文件最后加上：</p>
 <pre><code class="js">&lt;script&gt;
@@ -863,53 +901,48 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
         var uvcountOffset = 20000;
 
         function fixCount() {
-            if (document.getElementById(&quot;busuanzi_container_site_pv&quot;).style.display != &quot;none&quot;) {
-                $(&quot;#busuanzi_value_site_pv&quot;).html(parseInt($(&quot;#busuanzi_value_site_pv&quot;).html()) + pvcountOffset);
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
                 clearInterval(int);
             }
-            if ($(&quot;#busuanzi_container_site_pv&quot;).css(&quot;display&quot;) != &quot;none&quot;) {
-                $(&quot;#busuanzi_value_site_uv&quot;).html(parseInt($(&quot;#busuanzi_value_site_uv&quot;).html()) + uvcountOffset); // 加上初始数据 
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
                 clearInterval(int); // 停止检测
             }
         }
     });
-&lt;/script&gt;
-</code></pre>
+&lt;/script&gt;</code></pre>
 <p>然后把上面几行有段代码：</p>
 <pre><code class="html">&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalTraffic) { %&gt;
-    &lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;
-        &lt;i class=&quot;fa fa-heart-o&quot;&gt;&lt;/i&gt;
-        本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt;
+    &lt;span id="busuanzi_container_site_pv"&gt;
+        &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        本站总访问量 &lt;span id="busuanzi_value_site_pv" class="white-color"&gt;&lt;/span&gt;
     &lt;/span&gt;
 &lt;% } %&gt;
 &lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalNumberOfvisitors) { %&gt;
-    &lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;
-        人次,&amp;nbsp;访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt; 人.
+    &lt;span id="busuanzi_container_site_uv"&gt;
+        人次,&amp;nbsp;访客数 &lt;span id="busuanzi_value_site_uv" class="white-color"&gt;&lt;/span&gt; 人.
     &lt;/span&gt;
-&lt;% } %&gt;
-</code></pre>
+&lt;% } %&gt;</code></pre>
 <p>修改为：</p>
 <pre><code class="html">&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalTraffic) { %&gt;
-    &lt;span id=&quot;busuanzi_container_site_pv&quot; style=&#39;display:none&#39;&gt;
-        &lt;i class=&quot;fa fa-heart-o&quot;&gt;&lt;/i&gt;
-        本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt;
+    &lt;span id="busuanzi_container_site_pv" style='display:none'&gt;
+        &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        本站总访问量 &lt;span id="busuanzi_value_site_pv" class="white-color"&gt;&lt;/span&gt;
     &lt;/span&gt;
 &lt;% } %&gt;
 &lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalNumberOfvisitors) { %&gt;
-    &lt;span id=&quot;busuanzi_container_site_uv&quot; style=&#39;display:none&#39;&gt;
-        人次,&amp;nbsp;访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt; 人.
+    &lt;span id="busuanzi_container_site_uv" style='display:none'&gt;
+        人次,&amp;nbsp;访客数 &lt;span id="busuanzi_value_site_uv" class="white-color"&gt;&lt;/span&gt; 人.
     &lt;/span&gt;
-&lt;% } %&gt;
-</code></pre>
-<p>其实就是增加了两个<code>style=&#39;display:none&#39;</code>而已。</p>
+&lt;% } %&gt;</code></pre>
+<p>其实就是增加了两个<code>style='display:none'</code>而已。</p>
 <h3 id="2-7-添加动漫人物"><a href="#2-7-添加动漫人物" class="headerlink" title="2.7 添加动漫人物"></a>2.7 添加动漫人物</h3><hr>
 <p>其实三步就行了，不用像网上有些教程那么复杂。</p>
 <p><strong>第一步：</strong></p>
-<pre><code class="bash">npm install --save hexo-helper-live2d
-</code></pre>
+<pre><code class="bash">npm install --save hexo-helper-live2d</code></pre>
 <p><strong>第二步：</strong></p>
-<pre><code class="bash">npm install live2d-widget-model-shizuku
-</code></pre>
+<pre><code class="bash">npm install live2d-widget-model-shizuku</code></pre>
 <blockquote>
 <p>这里的动漫模型可以改，只需要下载对应模型就行了，你可以官方仓库去看有哪些模型，下载你喜欢的就行。</p>
 </blockquote>
@@ -931,66 +964,60 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
     mobile:
         show: false
     react:
-        opacity: 0.7
-</code></pre>
+        opacity: 0.7</code></pre>
 <p>然后<code>hexo g</code>再<code>hexo s</code>就能预览出效果了，但是有个注意的地方，<strong>这个动漫人物最好不要和不蒜子同时使用</strong>，不然不蒜子会显示不出来。至于解决办法后续更新。</p>
 <blockquote>
 <p><strong>解决动漫人物和不蒜子不能同时使用的<code>bug</code>（2019.08.11）</strong>：</p>
 </blockquote>
 <p>打开<code>themes\matery\layout\_partial</code>中的<code>footer.ejs</code>，将本站总访问量和访客数的代码改为如下：</p>
 <pre><code class="js">&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalTraffic) { %&gt;      
-    &lt;span id=&quot;busuanzi_container_site_pv&quot; style=&#39;display:none&#39;&gt;&lt;/span&gt;
-        &lt;i class=&quot;fa fa-heart-o&quot;&gt;&lt;/i&gt;
-        本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt;
+    &lt;span id="busuanzi_container_site_pv" style='display:none'&gt;&lt;/span&gt;
+        &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        本站总访问量 &lt;span id="busuanzi_value_site_pv" class="white-color"&gt;&lt;/span&gt;
 
 &lt;% } %&gt;
 
 &lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalNumberOfvisitors) { %&gt;
-    &lt;span id=&quot;busuanzi_container_site_uv&quot; style=&#39;display:none&#39;&gt;&lt;/span&gt;
-        人次,&amp;nbsp;访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt; 人.
+    &lt;span id="busuanzi_container_site_uv" style='display:none'&gt;&lt;/span&gt;
+        人次,&amp;nbsp;访客数 &lt;span id="busuanzi_value_site_uv" class="white-color"&gt;&lt;/span&gt; 人.
 
-&lt;% } %&gt;
-</code></pre>
+&lt;% } %&gt;</code></pre>
 <p>变化就在下面两句，将源代码对应字段后面的<code>＜/span＞</code>写在前面了。</p>
-<pre><code class="js">&lt;span id=&quot;busuanzi_container_site_pv&quot; style=&#39;display:none&#39;&gt;&lt;/span&gt;
-&lt;span id=&quot;busuanzi_container_site_uv&quot; style=&#39;display:none&#39;&gt;&lt;/span&gt;
-</code></pre>
+<pre><code class="js">&lt;span id="busuanzi_container_site_pv" style='display:none'&gt;&lt;/span&gt;
+&lt;span id="busuanzi_container_site_uv" style='display:none'&gt;&lt;/span&gt;</code></pre>
 <blockquote>
 <p><strong>发现按照上面改了过后，又出现一个新<code>bug</code>：文章头部的阅读次数不显示了，解决办法：（2019.08.11）</strong>：</p>
 </blockquote>
 <p>打开<code>themes\matery\layout\_partial</code>中的<code>post-detail.ejs</code>，找到对应代码字段：</p>
 <pre><code class="js">&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.enable) { %&gt;
-    &lt;div id=&quot;busuanzi_container_page_pv&quot; class=&quot;info-break-policy&quot;&gt;
-        &lt;i class=&quot;fa fa-eye fa-fw&quot;&gt;&lt;/i&gt;&lt;%- __(&#39;readCount&#39;) %&gt;:&amp;nbsp;&amp;nbsp;
-        &lt;span id=&quot;busuanzi_value_page_pv&quot; &gt;&lt;/span&gt;
+    &lt;div id="busuanzi_container_page_pv" class="info-break-policy"&gt;
+        &lt;i class="fa fa-eye fa-fw"&gt;&lt;/i&gt;&lt;%- __('readCount') %&gt;:&amp;nbsp;&amp;nbsp;
+        &lt;span id="busuanzi_value_page_pv" &gt;&lt;/span&gt;
     &lt;/div&gt;
 
-&lt;% } %&gt;
-</code></pre>
+&lt;% } %&gt;</code></pre>
 <p>修改为下面的就可以了：</p>
 <pre><code class="js">&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.enable) { %&gt;
-        &lt;span id=&quot;busuanzi_container_site_pv&quot; style=&#39;display:none&#39;&gt;&lt;/span&gt;
-        &lt;i class=&quot;fa fa-eye fa-fw&quot;&gt;&lt;/i&gt;&lt;%- __(&#39;readCount&#39;) %&gt;:&amp;nbsp;&amp;nbsp;
-        &lt;span id=&quot;busuanzi_value_page_pv&quot; &gt;&lt;/span&gt;
+        &lt;span id="busuanzi_container_site_pv" style='display:none'&gt;&lt;/span&gt;
+        &lt;i class="fa fa-eye fa-fw"&gt;&lt;/i&gt;&lt;%- __('readCount') %&gt;:&amp;nbsp;&amp;nbsp;
+        &lt;span id="busuanzi_value_page_pv" &gt;&lt;/span&gt;
 
-&lt;% } %&gt;
-</code></pre>
+&lt;% } %&gt;</code></pre>
 <h3 id="2-8-添加评论插件"><a href="#2-8-添加评论插件" class="headerlink" title="2.8 添加评论插件"></a>2.8 添加评论插件</h3><hr>
-<p>由于这个主题自带了<code>gittalk</code>、<code>gitment</code>、<code>valine</code>等评论插件，所以我们只需要对应插件参数就行了，这个博客用的是<code>gittalk</code>，如下：<img src="/.io//13.png" alt><br>当然也可以用其他评论插件，只需要配置对应项就是了，不是自带的可以照着网上的教程自己弄一个，类似的文章有很多，可以搜索关键字就行了。</p>
+<p>由于这个主题自带了<code>gittalk</code>、<code>gitment</code>、<code>valine</code>等评论插件，所以我们只需要对应插件参数就行了，这个博客用的是<code>gittalk</code>，如下：<img src="/.io//13.png" alt=""><br>当然也可以用其他评论插件，只需要配置对应项就是了，不是自带的可以照着网上的教程自己弄一个，类似的文章有很多，可以搜索关键字就行了。</p>
 <h3 id="2-9-添加网易云音乐BGM"><a href="#2-9-添加网易云音乐BGM" class="headerlink" title="2.9 添加网易云音乐BGM"></a>2.9 添加网易云音乐BGM</h3><hr>
 <p>写文章的时候，想插入一段<code>BGM</code>怎么办？</p>
-<p>其实我们可以借助一些在线音乐的外链播放方式，首先打开网易云网页版，找到想听的歌曲，然后点击生成外链：<br><img src="/.io//14.png" alt></p>
+<p>其实我们可以借助一些在线音乐的外链播放方式，首先打开网易云网页版，找到想听的歌曲，然后点击生成外链：<br><img src="/.io//14.png" alt=""></p>
 <p>可能你会遇到问题，比如点击生成外链会提示你由于版权原因，不能生成，那么可以用下面办法(目前还有效，不知道后面会不会失效)</p>
 <ol>
 <li>(以 <code>Chrome</code>为例，其他浏览器类似) 打开歌单页面，在“生成外链播放器”上右击，点击审查元素（检查）ctrl+shift+i；</li>
-<li>接着找到生成外链播放器这段文字直接双击复制前面的<code>/outchain/2/20707408/</code> <img src="/.io//15.png" alt></li>
+<li>接着找到生成外链播放器这段文字直接双击复制前面的<code>/outchain/2/20707408/</code> <img src="/.io//15.png" alt=""></li>
 <li>然后在浏览器地址栏修改歌单链接，示例：<a href="http://music.163.com/#//outchain/2/20707408/" target="_blank" rel="noopener">http://music.163.com/#//outchain/2/20707408/</a></li>
 <li>然后就转到外链设置页面了。</li>
 </ol>
-<p>复制如下代码：<br><img src="/.io//16.png" alt></p>
+<p>复制如下代码：<br><img src="/.io//16.png" alt=""></p>
 <p>粘贴到文章对应位置就行了，为了美观，设置一下居中，具体代码如下：</p>
-<pre><code class="html">&lt;div align=&quot;middle&quot;&gt;这里粘贴刚刚复制的代码&lt;/div&gt;
-</code></pre>
+<pre><code class="html">&lt;div align="middle"&gt;这里粘贴刚刚复制的代码&lt;/div&gt;</code></pre>
 <h3 id="2-10-博客音乐板块"><a href="#2-10-博客音乐板块" class="headerlink" title="2.10 博客音乐板块"></a>2.10 博客音乐板块</h3><hr>
 <p>如果我们自己写博客写疲劳了，想放松一下听听歌又不想切出博客主页，那么我们可以自己定制一个博客音乐播放界面，把自己喜欢的歌曲都放进来，这里用到是Aplayer插件，但是歌曲来源需要我们自己定义，但是，因为各大音乐平台，由于版权原因，很多歌曲是不支持外链播放的，难道我们就必须每首歌下载然后上传云空间，再获取词曲封面么？这就比较麻烦了。其实不然，研究了半个小时，我发现可以采取下面的办法，很方便：</p>
 <ul>
@@ -998,20 +1025,18 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
 <li>然后通过下面网址：<a href="http://music.163.com/song/media/outer/url?id=XXXXXX.mp3，" target="_blank" rel="noopener">http://music.163.com/song/media/outer/url?id=XXXXXX.mp3，</a> <code>XXXXXX</code>就是歌曲<code>ID</code>号，每一首歌我们只需要换掉这个<code>ID</code>号就行了,就相当于每一首的外链了</li>
 <li>最后封面图也可以按<code>F12</code>去找页面元素的链接，填到对应的<code>musics.jason</code>文件中就可以，批量填入，听到好听的歌曲随时更换随时新增，很方便。</li>
 </ul>
-<p>操作如下图：<img src="/.io//43.png" alt></p>
+<p>操作如下图：<img src="/.io//43.png" alt=""></p>
 <h3 id="2-11-增加emoji支持"><a href="#2-11-增加emoji支持" class="headerlink" title="2.11 增加emoji支持"></a>2.11 增加emoji支持</h3><hr>
 <p>为博客新增对<code>emoji</code>表情的支持，使用到了 <a href="https://npm.taobao.org/package/hexo-filter-github-emojis" target="_blank" rel="noopener">hexo-filter-github-emojis</a> 的 Hexo 插件来支持 <code>emoji</code>表情的生成，把对应的<code>markdown emoji</code>语法（<code>::</code>,例如：:smile:  <code>:smile:</code>）转变成会跳跃的<code>emoji</code>表情，安装命令如下：</p>
-<pre><code class="bash">npm install hexo-filter-github-emojis --save
-</code></pre>
+<pre><code class="bash">npm install hexo-filter-github-emojis --save</code></pre>
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre><code class="yaml">githubEmojis:
   enable: true
   className: github-emoji
   inject: true
   styles:
-  customEmojis:
-</code></pre>
-<p>执行 <code>hexo clean &amp;&amp; hexo g</code> 重新生成博客文件，然后就可以在文章中对应位置看到你用<code>emoji</code>语法写的表情了。<br>如下图：<br><img src="https://raw.githubusercontent.com/shw2018/SDN/master/blog_files/img/hexo-blog/emoji支持.gif" alt="emoji支持"></p>
+  customEmojis:</code></pre>
+<p>执行 <code>hexo clean &amp;&amp; hexo g</code> 重新生成博客文件，然后就可以在文章中对应位置看到你用<code>emoji</code>语法写的表情了。<br>如下图：<br><img src="https://raw.githubusercontent.com/shw2018/SDN/master/blog_files/img/hexo-blog/emoji%E6%94%AF%E6%8C%81.gif" alt="emoji支持"></p>
 <h1 id="第三部分-优化"><a href="#第三部分-优化" class="headerlink" title="第三部分 优化"></a>第三部分 优化</h1><hr>
 <p><code>hexo</code>添加各种优化功能，比如<code>SEO</code>优化等。<br>待续……</p>
 <h2 id="1-网站SEO优化"><a href="#1-网站SEO优化" class="headerlink" title="1. 网站SEO优化"></a>1. 网站SEO优化</h2><hr>
@@ -1043,18 +1068,16 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
 <p>我们需要使用<code>npm</code>自动生成网站的<code>sitemap</code>，然后将生成的<code>sitemap</code>提交到百度和其他搜索引擎</p>
 <h5 id="1-1-2-1-安装sitemap插件"><a href="#1-1-2-1-安装sitemap插件" class="headerlink" title="1.1.2.1 安装sitemap插件"></a>1.1.2.1 安装sitemap插件</h5><hr>
 <pre><code class="bash">npm install hexo-generator-sitemap --save     
-npm install hexo-generator-baidu-sitemap --save
-</code></pre>
+npm install hexo-generator-baidu-sitemap --save</code></pre>
 <h5 id="1-1-2-2-修改博客配置文件"><a href="#1-1-2-2-修改博客配置文件" class="headerlink" title="1.1.2.2 修改博客配置文件"></a>1.1.2.2 修改博客配置文件</h5><hr>
 <p>在根目录配置文件<code>.yml</code>中修改<code>url</code>为你的站点地址</p>
 <pre><code class="yml"># URL
-## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 # url: https://shw2018.github.io/
 url: https://sunhwee.com
 root: /
 permalink: :year/:month/:day/:title/
-permalink_defaults:
-</code></pre>
+permalink_defaults:</code></pre>
 <p>执行完<code>hexo g</code>命令之后就会在网站根目录生成<code>sitemap.xml</code>文件和<code>baidusitemap.xml文件</code>，可以通过：<a href="https://sunhwee.com/baidusitemap.xml" target="_blank" rel="noopener">https://sunhwee.com/baidusitemap.xml</a>,  查看该文件是否生成，其中<code>sitemap.xml</code>文件是搜索引擎通用的文件，<code>baidusitemap.xml</code>是百度专用的<code>sitemap</code>文件。</p>
 <h4 id="1-1-3-向百度提交链接"><a href="#1-1-3-向百度提交链接" class="headerlink" title="1.1.3 向百度提交链接"></a>1.1.3 向百度提交链接</h4><hr>
 <p>然后我们就可以将我们生成的<code>sitemap</code>文件提交给百度，还是在百度站长平台，找到链接提交，这里我们可以看到有两种提交方式，自动提交和手动提交，自动提交又分为主动推送、自动推送和<code>sitemap</code></p>
@@ -1075,20 +1098,17 @@ permalink_defaults:
 <p><img src="/.io//27.png" alt="连接提交"></p>
 <h5 id="1-1-3-1-设置主动推送"><a href="#1-1-3-1-设置主动推送" class="headerlink" title="1.1.3.1 设置主动推送"></a>1.1.3.1 设置主动推送</h5><hr>
 <p>安装插件<code>hexo-baidu-url-submit</code></p>
-<pre><code class="bash">npm install hexo-baidu-url-submit --save
-</code></pre>
+<pre><code class="bash">npm install hexo-baidu-url-submit --save</code></pre>
 <p>然后再根目录的配置文件中新增字段</p>
 <pre><code class="yml">baidu_url_submit:
   count: 80             # 提交最新的一个链接
   host: www.sunhwee.com # 在百度站长平台中注册的域名
   token: xxxxxxxxxxxxxx # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
-  path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里
-</code></pre>
+  path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</code></pre>
 <p>再加入新的<code>deploy</code>：</p>
 <pre><code class="yml">deploy:
-- type: baidu_url_submitter
-</code></pre>
-<p>如图所示：<img src="/.io//28.png" alt></p>
+- type: baidu_url_submitter</code></pre>
+<p>如图所示：<img src="/.io//28.png" alt=""></p>
 <blockquote>
 <p><strong>注意,</strong>这里多个 <code>type</code> 的写法应该这么写**,前面那个 <code>type</code> 是我推送到 <code>Github</code> 与 <code>Coding</code>的<code>page</code>页面的配置,后面再讲这个。</p>
 </blockquote>
@@ -1101,29 +1121,27 @@ permalink_defaults:
 <h5 id="1-1-3-2-设置自动推送"><a href="#1-1-3-2-设置自动推送" class="headerlink" title="1.1.3.2 设置自动推送"></a>1.1.3.2 设置自动推送</h5><hr>
 <p>在主题配置文件下设置,将<code>baidu_push</code>设置为<code>true</code>：</p>
 <pre><code class="yml"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: true
-</code></pre>
+baidu_push: true</code></pre>
 <p>然后主题文件目录加入下面代码，一般在目录<code>/themes/matery/layout/_partial</code>中的<code>head.ejs</code>中加入下面<code>JS</code>代码（有可能你的目录不是这样，原理类似），这样全站都有了：</p>
 <pre><code class="js">&lt;% if (theme.baidu_push) { %&gt;
     &lt;script&gt;
         (function(){
-            var bp = document.createElement(&#39;script&#39;);
-            var curProtocol = window.location.protocol.split(&#39;:&#39;)[0];
-            if (curProtocol === &#39;https&#39;) {
-                bp.src = &#39;https://zz.bdstatic.com/linksubmit/push.js&#39;;        
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
             }
             else {
-                bp.src = &#39;http://push.zhanzhang.baidu.com/push.js&#39;;
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
             }
-            var s = document.getElementsByTagName(&quot;script&quot;)[0];
+            var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(bp, s);
         })();
     &lt;/script&gt;
-&lt;% } %&gt; 
-</code></pre>
+&lt;% } %&gt; </code></pre>
 <p>这样每次访问博客中的页面就会自动向百度提交<code>sitemap</code></p>
 <h5 id="1-1-3-3-sitemap方式"><a href="#1-1-3-3-sitemap方式" class="headerlink" title="1.1.3.3 sitemap方式"></a>1.1.3.3 <strong>sitemap</strong>方式</h5><hr>
-<p>将我们上一步生成的<code>sitemap</code>文件提交到百度就可以了~<br><img src="/.io//33.png" alt="将sitemap提交到百度"><br>我记得被百度收录过程还是蛮久的，一度让我以为我的方法有问题，提交链接在站长工具中有显示大概是有两天的时候，站点被百度收录大概花了半个月= =，让大家看一下现在的成果<br>在百度搜索<code>site:sunhwee.com</code>已经可以搜索到结果<br><img src alt="站点已被百度收录"><br>在搜索框输入域名也可以找到站点<br><img src alt="站点已被百度收录"><br>输入关键字的名字也可以在第二页就找到呢，好开森~<br><img src alt="站点已被百度收录"></p>
+<p>将我们上一步生成的<code>sitemap</code>文件提交到百度就可以了~<br><img src="/.io//33.png" alt="将sitemap提交到百度"><br>我记得被百度收录过程还是蛮久的，一度让我以为我的方法有问题，提交链接在站长工具中有显示大概是有两天的时候，站点被百度收录大概花了半个月= =，让大家看一下现在的成果<br>在百度搜索<code>site:sunhwee.com</code>已经可以搜索到结果<br><img src="" alt="站点已被百度收录"><br>在搜索框输入域名也可以找到站点<br><img src="" alt="站点已被百度收录"><br>输入关键字的名字也可以在第二页就找到呢，好开森~<br><img src="" alt="站点已被百度收录"></p>
 <h3 id="1-2-让google收录你的站点"><a href="#1-2-让google收录你的站点" class="headerlink" title="1.2 让google收录你的站点"></a>1.2 让google收录你的站点</h3><hr>
 <h4 id="1-2-1-操作步骤"><a href="#1-2-1-操作步骤" class="headerlink" title="1.2.1 操作步骤"></a>1.2.1 操作步骤</h4><p>相比于百度，<code>google</code>的效率实在不能更快，貌似十分钟左右站点就被收录了，其实方法是和百度是一样的。</p>
 <p><code>google</code>站点平台：<a href="https://www.google.com/webmasters/" target="_blank" rel="noopener">https://www.google.com/webmasters/</a>  </p>
@@ -1148,8 +1166,7 @@ Allow: /about/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
-Disallow: /vendors/
-</code></pre>
+Disallow: /vendors/</code></pre>
 <p><code>robots.txt</code> 文件更新至网站后可进入 <code>Google Search Console</code> - 抓取 - <code>robots.txt</code> 测试工具进行测试。</p>
 <p>这里部分参考自<code>Hexo</code>博客搜索 <a href="https://fedoryx.github.io/Hexo-%E5%8D%9A%E5%AE%A2%E6%90%9C%E7%B4%A2-SEO-%E4%BC%98%E5%8C%96-%E8%B0%B7%E6%AD%8C%E7%AF%87/" target="_blank" rel="noopener">SEO优化-谷歌篇</a></p>
 <h3 id="1-3-让其他搜索引擎收录你的站点"><a href="#1-3-让其他搜索引擎收录你的站点" class="headerlink" title="1.3 让其他搜索引擎收录你的站点"></a>1.3 让其他搜索引擎收录你的站点</h3><hr>
@@ -1159,8 +1176,7 @@ Disallow: /vendors/
 <pre><code class="yml">url: http://sunhwee.com
 root: /
 permalink: :title.html
-permalink_defaults:
-</code></pre>
+permalink_defaults:</code></pre>
 <h3 id="1-5-其他seo优化"><a href="#1-5-其他seo优化" class="headerlink" title="1.5 其他seo优化"></a>1.5 其他seo优化</h3><hr>
 <p><code>seo</code>优化应该说是一个收益延迟的行为，可能你做的优化短期内看不到什么效果，但是一定要坚持，<code>seo</code>优化也是有很深的可以研究的东西，从我们最初的网站设计，和最基础的标签的选择都有很大的关系，网站设计就如我们刚刚说的，要让用户点击三次可以到达网站的任何一个页面，要增加高质量的外链，增加相关推荐（比如说我们经常见到右侧本站的最高阅读的排名列表），然后就是给每一个页面加上<code>keyword</code>和描述</p>
 <p>在代码中，我们应该写出能让浏览器识别的语义化<code>HTML</code>，这样有助于爬虫抓取更多的有效信息：爬虫依赖于标签来确定上下文和各个关键字的权重；并且对外链设置<code>nofollow</code>标签，避免<code>spider</code>爬着爬着就爬出去了（减少网站的跳出率），并且我们要尽量在一些比较大的网站增加我们站点的曝光率，因为<code>spider</code>会经常访问大站，比如我们在掘金等技术社区发表文章中带有我们的站点，这样<code>spider</code>是很有可能爬到我们中的站点的，so….</p>
@@ -1187,8 +1203,7 @@ permalink_defaults:
     overflow: auto;
     border-radius: 0.35rem;
     tab-size: 4;
-}
-</code></pre>
+}</code></pre>
 <p>改为：</p>
 <pre><code class="css">pre {
     padding: 1.5rem 1.5rem 1.5rem 3.3rem !important;
@@ -1197,18 +1212,16 @@ permalink_defaults:
     overflow: auto;
     border-radius: 0.35rem;
     tab-size: 4;
-}
-</code></pre>
+}</code></pre>
 <p>注释掉紧接着的<code>code</code>代码块里面的<code>font-size</code>项，如下：</p>
 <pre><code class="css">code {
     padding: 1px 5px;
-    font-family: Inconsolata, Monaco, Consolas, &#39;Courier New&#39;, Courier, monospace;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
     /*font-size: 0.91rem;*/
     color: #e96900;
     background-color: #f8f8f8;
     border-radius: 2px;
-}
-</code></pre>
+}</code></pre>
 <p>好了这下可以显示行号了，如图：<img src="/.io//42.png" alt="代码块显示行号"></p>
 <h3 id="2-2-添加代码块复制功能"><a href="#2-2-添加代码块复制功能" class="headerlink" title="2.2 添加代码块复制功能"></a>2.2 添加代码块复制功能</h3><hr>
 <h2 id="3-优化网站加载速度"><a href="#3-优化网站加载速度" class="headerlink" title="3. 优化网站加载速度"></a>3. 优化网站加载速度</h2><hr>
@@ -1218,24 +1231,22 @@ permalink_defaults:
 <p>一般情况下懒加载和gallery插件会发生冲突，比如按照我上面所说，最终结果就会变成，可能只有第一张图片在gallery中打开是原图，右翻左翻都会是那张loading image，需要你掌握js，可以修改matery.js里面的内容，甚至可能换一个gallery，比如photosiwpe之类的</p>
 <p>解决方法：修改<code>/themes/matery/source/js</code>中的<code>matery.js</code>文件</p>
 <p>第103行：</p>
-<pre><code class="js">$(&#39;#articleContent, #myGallery&#39;).lightGallery({
-    selector: &#39;.img-item&#39;,
+<pre><code class="js">$('#articleContent, #myGallery').lightGallery({
+    selector: '.img-item',
     // 启用字幕
     subHtmlSelectorRelative: true,
     showThumbByDefault: false   //这句加上
-});
-</code></pre>
+});</code></pre>
 <p>后面加上：</p>
-<pre><code class="js">$(document).find(&#39;img[data-original]&#39;).each(function(){
-    $(this).parent().attr(&quot;href&quot;, $(this).attr(&quot;data-original&quot;));
-});
-</code></pre>
+<pre><code class="js">$(document).find('img[data-original]').each(function(){
+    $(this).parent().attr("href", $(this).attr("data-original"));
+});</code></pre>
 <p>再装个插件，<a href="https://github.com/Troy-Yang/hexo-lazyload-image" target="_blank" rel="noopener">https://github.com/Troy-Yang/hexo-lazyload-image</a></p>
 <h2 id="3-一些注意事项"><a href="#3-一些注意事项" class="headerlink" title="3. 一些注意事项"></a>3. 一些注意事项</h2><hr>
 <h3 id="3-1-备份博客源文件"><a href="#3-1-备份博客源文件" class="headerlink" title="3.1 备份博客源文件"></a>3.1 备份博客源文件</h3><hr>
 <p>有时候我们想换一台电脑继续写博客，最简单的方法就是把博客整个目录拷贝过去，就是这么暴力。不过，这种方法有个问题就是要是那天电脑崩了，本地源文件丢失了，比较麻烦，所以这时候就可以将博客目录下的所有源文件都上传到<code>github</code>上面。</p>
 <p>首先在<code>github</code>博客仓库下新建一个分支<code>hexo</code>，然后<code>git clone</code>到本地，把<code>.git</code>文件夹拿出来，放在博客根目录下。</p>
-<p>然后<code>git branch -b hexo</code>切换到<code>hexo</code>分支，然后<code>git add .</code>，然后<code>git commit -m &quot;xxx&quot;</code>，最后<code>git push origin hexo</code>提交就行了。</p>
+<p>然后<code>git branch -b hexo</code>切换到<code>hexo</code>分支，然后<code>git add .</code>，然后<code>git commit -m "xxx"</code>，最后<code>git push origin hexo</code>提交就行了。</p>
 <p>具体效果可以看我的博客源文件仓库：<a href="https://github.com/shw2018/shw2018.github.io" target="_blank" rel="noopener">传送门</a>。</p>
 <p>大家也可以先用下文<code>hexo</code>安装方法安装完<code>hexo</code>，然后直接<code>git clone -b hexo https://github.com/shw2018/shw2018.github.io.git</code>克隆我的所有源文件，这是我目前修改完的基本没<code>bug</code>的定制化的博客，可以直接拿来用。</p>
 <p><strong>持续更新中…，如果遇到问题欢迎联系我，一起讨论。</strong></p>
@@ -1247,7 +1258,25 @@ permalink_defaults:
 <li><a href="https://www.jianshu.com/p/f37452d4978e" target="_blank" rel="noopener">一月筠</a></li>
 <li><a href="https://hui-wang.info/2016/10/23/Hexo%E6%8F%92%E4%BB%B6%E4%B9%8B%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5/" target="_blank" rel="noopener">王辉的博客</a></li>
 </ul>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -1279,7 +1308,7 @@ permalink_defaults:
           
             <a href="/2019/08/12/softwares-bug-tips/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(8).jpg.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(8).jpg.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/8.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/8.jpg">
               </div>
               <span class="label">
               Previous Post</span>
@@ -1297,7 +1326,7 @@ permalink_defaults:
           
             <a href="/2019/08/06/常用软件推荐/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(1).jpg.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/cover/(1).jpg.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/3.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.1/sakura/img/cover/3.jpg">
               </div>
               <span class="label">
               Next Post</span>
@@ -1327,11 +1356,11 @@ permalink_defaults:
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="sunhwee.com" class="profile gravatar"><img src="https://sunhwee.com/favicon.png" itemprop="image" alt="洪卫" height="70" width="70"></a>
+          <a href="https://sunhwee.com" class="profile gravatar"><img src="https://sunhwee.com/favicon.png" itemprop="image" alt="洪卫" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="sunhwee.com" itemprop="url" rel="author">洪卫</a>
+            <a href="https://sunhwee.com" itemprop="url" rel="author">洪卫</a>
             </h3>
           </div>
         </div>
@@ -1723,7 +1752,7 @@ $(document).ready(function() {
 
     data-loop="all"
 
-    data-order="random"
+    data-order="list"
 
     data-preload="auto"
 

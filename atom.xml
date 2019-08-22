@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sunhwee.github.io/"/>
-  <updated>2019-08-21T11:25:04.588Z</updated>
+  <updated>2019-08-22T06:58:31.094Z</updated>
   <id>https://sunhwee.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hls-video</title>
+    <link href="https://sunhwee.github.io/2019/08/22/hls-video/"/>
+    <id>https://sunhwee.github.io/2019/08/22/hls-video/</id>
+    <published>2019-08-22T05:37:15.000Z</published>
+    <updated>2019-08-22T06:58:31.094Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;启用方法： 在 WordPress
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="video" scheme="https://sunhwee.github.io/tags/video/"/>
+    
+      <category term="tutorail" scheme="https://sunhwee.github.io/tags/tutorail/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PicGo+GitHub：你的最佳免费图床选择！</title>
     <link href="https://sunhwee.github.io/2019/08/18/PicGo-GitHub-PicBed/"/>
     <id>https://sunhwee.github.io/2019/08/18/PicGo-GitHub-PicBed/</id>
     <published>2019-08-18T12:54:45.000Z</published>
-    <updated>2019-08-21T11:25:04.588Z</updated>
+    <updated>2019-08-22T06:58:44.902Z</updated>
     
     <summary type="html">
     
@@ -47,7 +75,7 @@
     <link href="https://sunhwee.github.io/2019/08/16/emoji-cheat-sheet/"/>
     <id>https://sunhwee.github.io/2019/08/16/emoji-cheat-sheet/</id>
     <published>2019-08-16T10:50:36.000Z</published>
-    <updated>2019-08-21T11:24:51.400Z</updated>
+    <updated>2019-08-22T07:00:35.076Z</updated>
     
     <summary type="html">
     
@@ -71,7 +99,7 @@
     <link href="https://sunhwee.github.io/2019/08/16/Python-GUI-TKinter-Tutorial/"/>
     <id>https://sunhwee.github.io/2019/08/16/Python-GUI-TKinter-Tutorial/</id>
     <published>2019-08-16T07:36:09.000Z</published>
-    <updated>2019-08-21T11:25:08.092Z</updated>
+    <updated>2019-08-22T07:02:19.229Z</updated>
     
     <summary type="html">
     
@@ -97,7 +125,7 @@
     <link href="https://sunhwee.github.io/2019/08/15/software-commands/"/>
     <id>https://sunhwee.github.io/2019/08/15/software-commands/</id>
     <published>2019-08-15T06:25:59.000Z</published>
-    <updated>2019-08-21T11:40:22.882Z</updated>
+    <updated>2019-08-22T07:02:38.873Z</updated>
     
     <summary type="html">
     
@@ -121,7 +149,7 @@
     <link href="https://sunhwee.github.io/2019/08/12/softwares-bug-tips/"/>
     <id>https://sunhwee.github.io/2019/08/12/softwares-bug-tips/</id>
     <published>2019-08-12T08:42:05.000Z</published>
-    <updated>2019-08-21T11:47:29.332Z</updated>
+    <updated>2019-08-22T07:02:29.281Z</updated>
     
     <summary type="html">
     
@@ -147,7 +175,7 @@
     <link href="https://sunhwee.github.io/2019/08/10/Hexo-Blog-Tutorial/"/>
     <id>https://sunhwee.github.io/2019/08/10/Hexo-Blog-Tutorial/</id>
     <published>2019-08-10T13:44:44.000Z</published>
-    <updated>2019-08-21T11:24:56.596Z</updated>
+    <updated>2019-08-22T07:01:57.614Z</updated>
     
     <summary type="html">
     
@@ -173,7 +201,7 @@
     <link href="https://sunhwee.github.io/2019/08/06/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
     <id>https://sunhwee.github.io/2019/08/06/常用软件推荐/</id>
     <published>2019-08-06T14:35:36.000Z</published>
-    <updated>2019-08-21T11:24:47.876Z</updated>
+    <updated>2019-08-22T07:03:01.224Z</updated>
     
     <summary type="html">
     
@@ -184,9 +212,9 @@
       <category term="技术" scheme="https://sunhwee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Software" scheme="https://sunhwee.github.io/tags/Software/"/>
-    
       <category term="常用软件" scheme="https://sunhwee.github.io/tags/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Software" scheme="https://sunhwee.github.io/tags/Software/"/>
     
       <category term="Windows" scheme="https://sunhwee.github.io/tags/Windows/"/>
     
@@ -199,7 +227,7 @@
     <link href="https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura/"/>
     <id>https://sunhwee.github.io/2018/12/12/Hexo-Theme-Sakura/</id>
     <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-08-21T11:47:49.303Z</updated>
+    <updated>2019-08-22T07:02:09.845Z</updated>
     
     <summary type="html">
     
